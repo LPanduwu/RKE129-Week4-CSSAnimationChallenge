@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 76, 100);
+}
+
+.main {
+    border: 1px solid white;
+    margin: 20px auto;
+    width: 600px;
+    height: 602px;
+}
+
+.main div {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#red {
+    background-color: red;
+    animation: cred;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes cred {
+    0% {top: -200px;}
+    100% {top: 0;}    
+}
+
+#yellow {
+    background-color: yellow;
+    animation: cyellow;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes cyellow {
+    0% {opacity: 0;}
+    100% {opacity: 1;}    
+}
+
+#green {
+    background-color: green;
+    animation: cgreen;
+    animation-duration: 8s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes cgreen {
+    0% {transform: rotateY(0deg);}
+    50% {transform: rotateY(360deg)};
+    100% {transform: rotateY(0deg);}
+}
+
+/*HINT -   transform: rotateY(0deg);*/
